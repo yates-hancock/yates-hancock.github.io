@@ -1,8 +1,18 @@
-﻿/*Stylesheet for index of wedding website*/
+﻿@import url('https://fonts.googleapis.com/css?family=Patrick+Hand|Special+Elite');
 
-/*IMPORTED FONTS*/
-body
-{
+
+/*Stylesheet for index of wedding website*/
+
+https://stackoverflow.com/questions/1909648/stacking-divs-on-top-of-each-other
+https://css-tricks.com/snippets/css/css-triangle/
+
+/*IMPORTED FONTS
+
+    font-family: 'Special Elite', cursive;
+    font-family: 'Patrick Hand', cursive;
+*/
+
+body {
     /*Define colours here and set background colour*/
 }
 
@@ -17,14 +27,62 @@ body
         "Footer";
 }
 
-.Title
-{
+.Title {
     grid-area: Title;
+    background-color: aquamarine;
+    padding: 0px 5px;
 }
 
-.NavBar
-{
+.Title .BrownPaper{
+    background-color: saddlebrown;
+    margin: 10px auto;
+    max-width: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    box-shadow: 0px 0px 10px black;
+}
+
+.BrownPaper .TRCornerFlap {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0 80px 80px 0;
+    border-color: transparent chocolate transparent transparent;
+    z-index: 2;
+}
+
+.BrownPaper .TLCornerFlap {
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-style: solid;    
+    border-width: 80px 0 0 80px;
+    border-color: transparent transparent transparent chocolate;
+    z-index: 2;
+}
+
+.Title p {
+    position: relative;
+    max-width: 250px;
+    margin: 0px auto;
+    padding: 5px 5px;
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    font-size: 3.2em;
+    background-color: whitesmoke;
+    border-style: none;
+    box-shadow: 0px 0px 15px black;
+}
+
+.NavBar {
     grid-area: NavBar;
+    font-family: 'Patrick Hand', cursive;
 }
 
 .InfoPage
@@ -51,6 +109,15 @@ body
             "NavBar NavBar"
             "InfoPage ImageGallery"
             "Footer Footer";
+    }
+
+    .Title .BrownPaper{
+        max-width: 550px;
+    }
+
+    .Title p {
+        font-size: 4em;
+        max-width: 500px;
     }
 }
 /*Could add other designs here, like tablet 
