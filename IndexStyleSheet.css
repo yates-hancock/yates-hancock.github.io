@@ -1,0 +1,57 @@
+﻿/*Stylesheet for index of wedding website*/
+
+/*IMPORTED FONTS*/
+body
+{
+    /*Define colours here and set background colour*/
+}
+
+/*MOBILE*/
+.Grid
+{
+    display: grid;
+    grid-template-areas: "Title"
+        "NavBar"
+        "InfoPage"
+        "ImageGallery"
+        "Footer";
+}
+
+.Title
+{
+    grid-area: Title;
+}
+
+.NavBar
+{
+    grid-area: NavBar;
+}
+
+.InfoPage
+{
+    grid-area: InfoPage;
+}
+
+.ImageGallery
+{
+    grid-area: ImageGallery;
+}
+
+.Footer
+{
+    grid-area: Footer;
+}
+/*DESKTOP*/
+@media screen and (min-width: 600px)
+{
+    .Grid
+    {
+        display: grid;
+        grid-template-areas: "Title Title"
+            "NavBar NavBar"
+            "InfoPage ImageGallery"
+            "Footer Footer";
+    }
+}
+/*Could add other designs here, like tablet 
+    https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile*/
