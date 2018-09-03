@@ -27,8 +27,17 @@ body {
 
 .Title {
     grid-area: Title;
-    background-color: aquamarine;
+    background-image: repeating-linear-gradient(45deg, whitesmoke, whitesmoke 80px, powderblue 80px, powderblue 160px, lightgoldenrodyellow 160px, lightgoldenrodyellow 240px);
     padding: 0px 5px;
+}
+
+.Title .EnvelopeBacking{
+    max-width: 340px;
+    margin: 10px auto;
+    background-color: navajowhite;
+    padding: 5px 0px;
+    border: none;
+    box-shadow: none;
 }
 
 .Title .BrownPaper {
@@ -59,7 +68,7 @@ body {
     left: 0;
     border-style: solid;
     border-width: 100px 150px 0 0;
-    border-color: aquamarine transparent transparent transparent;
+    border-color: navajowhite transparent transparent transparent;
     z-index: 2;
 }
 
@@ -71,7 +80,7 @@ body {
     right: 0;
     border-style: solid;
     border-width: 0 150px 100px 0;
-    border-color: transparent aquamarine transparent transparent;
+    border-color: transparent navajowhite transparent transparent;
     z-index: 2;
 }
 
@@ -165,8 +174,22 @@ body {
             "Footer Footer";
     }
 
+    .Title .EnvelopeBacking {
+        max-width: 540px;
+        margin: 10px auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 25px solid;
+        border-top-color: darkgrey;
+        border-right-color: lightgrey;
+        border-bottom-color: grey;
+        border-left-color: dimgrey;
+        box-shadow: inset 0px 0px 10px black;
+    }
+
     .Title .BrownPaper{
         max-width: 500px;
+        margin: 0px auto;
     }
 
     .BrownPaper p {
